@@ -1,0 +1,10 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'com.oddfactory.kydian'
+ compileSdk 35
+ defaultConfig { applicationId 'com.oddfactory.kydian'; minSdk 26; targetSdk 35; versionCode 35; versionName '1.0.6' }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+ buildTypes { release { debuggable false; minifyEnabled true; shrinkResources true; proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),'proguard-rules.pro' } }
+ lint { abortOnError true;checkReleaseBuilds true }
+}
+

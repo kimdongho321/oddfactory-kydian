@@ -1,0 +1,2 @@
+export function wallClearAt(sequence){let elapsed=0;for(const f of sequence){if(['clear','free-roll','reused-fall','seated-rest'].includes(f.phase)&&!f.occludeGround)return elapsed;elapsed+=f.duration;}return Infinity;}
+export function wallRimOpacity(data,sequence,elapsed){const t=elapsed-wallClearAt(sequence)-(data.wall_effects?.clear_delay_ms??300);return Math.max(0,Math.min(1,1-t/(data.wall_effects?.fade_ms??250)));}

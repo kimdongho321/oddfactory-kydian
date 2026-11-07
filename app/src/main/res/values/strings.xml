@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="app_name">데굴데굴 키디언</string>
+ <string name="pet_running">데굴데굴 키디언 실행 중</string>
+ <string name="access_description">캐릭터 그림과 작은 터치 영역을 표시해요. 다른 앱의 화면과 글자를 읽거나 전역 터치를 수집하지 않아요.</string>
+</resources>
